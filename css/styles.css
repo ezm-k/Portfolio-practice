@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+/* common */
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #24292e;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 65px;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  padding: 0 4%;
+  text-align: center;
+}
+
+/* header */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 270px;
+  max-width: 960px;
+  margin: 0 auto ;
+  padding: 0 4%;
+  text-align: center; 
+}
+
+#header ul{
+  display: flex;
+  padding: 10px 0;
+}
+
+#header li {
+  margin-left: 30px; 
+}
+
+#header li img {
+  width: 20px;
+}
+
+#header a {
+  color: #24292e;
+}
+
+#header a:hover {
+  opacity: .7;
+}
+
+/* main */
+.main-visual {
+  margin-bottom: 80px;
+}
+
+.main-visual img{
+  width: 100%;
+  max-width: 1920px;
+  height: 420px;
+  object-fit: cover;
+}
+
+/* About */
+
+#about p,
+#about li {
+  text-align: left;
+}
+
+#about p, 
+#about ul {
+  margin-bottom: 30px;
+}
+
+/* Works */
+
+#works .content {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 30px;
+}
+
+/* news */
+
+#news p {
+  margin-left: 80px;
+}
+
+#news li {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #c8c8c8;
+}
+
+#news  .lastnews{
+  border-bottom: 1px solid #c8c8c8; 
+}
+
+/* contact */
+#contact ul {
+  margin-bottom: 20px;
+}
+
+#contact li {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+#contact label {
+  width: 15%;
+  text-align: left;
+}
+
+#contact li input,
+#contact textarea {
+  width: 85%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+}
+
+#contact textarea {
+  height: 10rem;
+}
+
+#contact .button {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#contact .button input {
+  background: #24292e;
+  color: #fff;
+  width: 200px;
+  padding: 15px;
+  border: solid 1px #24292e;
+}
+
+#contact .button input:hover {
+  background: #fff;
+  color: #24292e;
+}
+
+/* footer */
+
+#footer {
+  background: #24292e;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* midium screen */
+
+@media (max-width:600px) {
+
+  /* common */
+ 
+  .section-title {
+    margin-bottom: 40px;
+  }
+  
+  .wrapper {
+    margin-bottom: 70px
+  }
+
+  /* header */
+  
+  #header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  
+  #header  h1 {
+    margin-top: 20px;
+  }
+  
+  #header li {
+    font-size: 0.8rem;
+    margin-left: 20px; 
+  }
+  
+  #header li:first-child {
+    margin-left: 0;
+  }
+
+  #header ul {
+    padding: 10px 0;
+  }
+
+  /* works */
+  #works .content {
+    display: block;
+  }
+
+  #works .pic {
+    margin-bottom: 20px;
+  }
+
+  /* news */
+  #news p {
+    margin-left: 0;
+  }
+  
+  #news li {
+    display: block;
+    text-align: left;
+  }
+
+  /* contact */
+ 
+  #contact li {
+    flex-direction: column;
+  }
+  
+  #contact label {
+    width: 100%;
+  }
+  
+  #contact li input,
+  #contact textarea {
+    width: 100%;
+  }
+}
